@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cn.microdone.gesture" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>gesture</name>
+    <js-module name="gesture" src="www/gesture.js">
+        <clobbers target="cordova.plugins.gesture" />
+    </js-module>
+	
+	
+	<!-- android -->  
+    <platform name="android">  
+        <config-file target="res/xml/config.xml" parent="/*">  
+            <feature name="Gesture">  
+                <param name="android-package" value="cn.microdone.gesture.Gesture"/>  
+            </feature>  
+        </config-file>  
+  
+  
+        <source-file src="src/android/Gesture.java" target-dir="src/cn/microdone/gesture" />  
+  
+  
+        <config-file target="AndroidManifest.xml" parent="/*">    
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.READ_SMS" />
+			<uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+        </config-file>   
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">  
+			
+      
+			<activity android:name="cn.microdone.gesture.MainActivity" android:label="@string/app_name" /> 
+			<activity android:name="cn.microdone.gesture.VerificationActivity" android:label="@string/title_activity_verification" />
+			<activity android:name="cn.microdone.gesture.RegisterActivity" android:label="@string/title_activity_register" />
+			<activity android:name="cn.microdone.gesture.RestartActivity" android:label="@string/title_activity_restart" />
+        </config-file>  
+  
+  
+        <source-file src="src/android/MainActivity.java" target-dir="src/cn/microdone/gesture" />  
+        <source-file src="src/android/VerificationActivity.java" target-dir="src/cn/microdone/gesture" />  
+        <source-file src="src/android/RegisterActivity.java" target-dir="src/cn/microdone/gesture" />  
+        <source-file src="src/android/RestartActivity.java" target-dir="src/cn/microdone/gesture" />
+        <source-file src="src/android/ListEncryptionMode.java" target-dir="src/cn/microdone/gesture" />  
+        <source-file src="src/android/Spinner_Adapter.java" target-dir="src/cn/microdone/gesture" />  
+        
+        
+  
+  
+        <source-file src="src/android/layout/activity_main.xml" target-dir="res/layout" />  
+        <source-file src="src/android/layout/activity_register.xml" target-dir="res/layout" />  
+        <source-file src="src/android/layout/activity_restart.xml" target-dir="res/layout" />  
+        <source-file src="src/android/layout/activity_verification.xml" target-dir="res/layout" />  
+        <source-file src="src/android/layout/ad_spinner.xml" target-dir="res/layout" /> 
+		
+		<source-file src="src/android/drawable/btn_color.xml" target-dir="res/drawable" />
+		<source-file src="src/android/drawable/selector_mianbut.xml" target-dir="res/drawable" />
+		
+		<source-file src="src/android/drawable-hdpi/btn_back_pressed.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/but_nomal.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/but_press.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/gesture_node_normal.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/gesture_node_pressed.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/gesture_node_wrong.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/icon.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/icon_back01.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/lock_pattern_node_normal.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/lock_pattern_node_pressed.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/main_background.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/more.png" target-dir="res/drawable-hdpi" />
+		
+		<source-file src="src/android/values/dimens.xml" target-dir="res/values" />
+	    <source-file src="src/android/values/strings.xml" target-dir="res/values" />
+	    <source-file src="src/android/values/styles.xml" target-dir="res/values" />
+		
+		<source-file src="src/android/libs/geemee_lockpatternsdk1.0.2.jar" target-dir="libs" />
+		<source-file src="src/android/libs/armeabi/libGeeMeeSDKBase.so" target-dir="libs/armeabi" />
+		<source-file src="src/android/libs/armeabi/libGesture.so" target-dir="libs/armeabi" />
+		<source-file src="src/android/libs/armeabi/libgnustl_shared.so" target-dir="libs/armeabi" />
+		
+		
+    </platform>
+</plugin>

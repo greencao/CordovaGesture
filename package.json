@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "F:\\gesture",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "F:\\gesture",
+        "spec": "F:\\gesture",
+        "type": "directory"
+      },
+      "C:\\Users\\FYSHUAIYE\\hello\\node_modules"
+    ]
+  ],
+  "_from": "F:\\gesture",
+  "_id": "gesture@1.0.0",
+  "_inCache": true,
+  "_location": "/gesture",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "F:\\gesture",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "F:\\gesture",
+    "spec": "F:\\gesture",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:F:\\gesture",
+  "_shasum": "5b24027689d3ff11d929709888a5bacef763552e",
+  "_shrinkwrap": null,
+  "_spec": "F:\\gesture",
+  "_where": "C:\\Users\\FYSHUAIYE\\hello\\node_modules",
+  "author": {
+    "name": "Apache Cordova Team"
+  },
+  "cordova": {
+    "plugins": {
+      "gesture": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "^6.2.3",
+    "cordova-plugin-whitelist": "^1.3.2",
+    "gesture": "^0.1.0"
+  },
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "devDependencies": {},
+  "displayName": "HelloWorld",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "gesture",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
