@@ -4,6 +4,9 @@
     <js-module name="gesture" src="www/gesture.js">
         <clobbers target="cordova.plugins.gesture" />
     </js-module>
+
+
+
 	
 	
 	<!-- android -->  
